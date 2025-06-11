@@ -18,13 +18,13 @@ export const MobileInterface = () => {
       setReservedSpot(spotId);
       const spot = spots.find(s => s.id === spotId);
       toast({
-        title: "Spot Reserved!",
-        description: `You've reserved spot #${spotId} on Floor ${spot?.floor}`,
+        title: "¡Espacio Reservado!",
+        description: `Has reservado el espacio #${spotId} en el Piso ${spot?.floor}`,
       });
     } else {
       toast({
-        title: "No spots available",
-        description: "All parking spots are currently occupied",
+        title: "No hay espacios disponibles",
+        description: "Todos los espacios de estacionamiento están ocupados",
         variant: "destructive",
       });
     }
@@ -32,7 +32,7 @@ export const MobileInterface = () => {
 
   const getSpotLocation = (spotId: number) => {
     const spot = spots.find(s => s.id === spotId);
-    return spot ? `Floor ${spot.floor}` : '';
+    return spot ? `Piso ${spot.floor}` : '';
   };
 
   return (
@@ -41,7 +41,7 @@ export const MobileInterface = () => {
         {/* Header */}
         <div className="text-center mb-6">
           <h1 className="text-3xl font-bold mb-2">sPark</h1>
-          <p className="text-muted-foreground">Smart Parking Reservations</p>
+          <p className="text-muted-foreground">Reservas Inteligentes de Estacionamiento</p>
         </div>
 
         {/* Quick Stats */}
@@ -52,13 +52,13 @@ export const MobileInterface = () => {
                 <div className="text-2xl font-bold text-green-600">
                   {availableSpots.length}
                 </div>
-                <div className="text-sm text-muted-foreground">Available</div>
+                <div className="text-sm text-muted-foreground">Disponibles</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-destructive">
                   {spots.length - availableSpots.length}
                 </div>
-                <div className="text-sm text-muted-foreground">Occupied</div>
+                <div className="text-sm text-muted-foreground">Ocupados</div>
               </div>
             </div>
           </CardContent>
@@ -68,7 +68,7 @@ export const MobileInterface = () => {
         {reservedSpot && (
           <Card className="mb-6 border-green-500 bg-green-50">
             <CardHeader>
-              <CardTitle className="text-green-700">Spot Reserved!</CardTitle>
+              <CardTitle className="text-green-700">¡Espacio Reservado!</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-center">
@@ -89,17 +89,17 @@ export const MobileInterface = () => {
           disabled={availableSpots.length === 0}
           className="w-full mb-6 h-12 text-lg"
         >
-          {availableSpots.length === 0 ? 'No Spots Available' : 'Reserve Random Spot'}
+          {availableSpots.length === 0 ? 'Sin Espacios Disponibles' : 'Reservar Espacio Aleatorio'}
         </Button>
 
         {/* Manual Selection */}
         <Card className="mb-6">
           <CardHeader>
-            <CardTitle>Choose Your Spot</CardTitle>
+            <CardTitle>Elige tu Espacio</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground mb-4">
-              Tap on any available (green) spot to reserve it
+              Toca cualquier espacio disponible (verde) para reservarlo
             </p>
             <div className="space-y-4">
               <ParkingFloor floor={1} isDesktop={false} />
@@ -111,17 +111,17 @@ export const MobileInterface = () => {
         {/* Legend */}
         <Card>
           <CardHeader>
-            <CardTitle>Legend</CardTitle>
+            <CardTitle>Leyenda</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
                 <div className="w-4 h-4 bg-green-100 border border-green-500 rounded"></div>
-                <span className="text-sm">Available</span>
+                <span className="text-sm">Disponible</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-4 h-4 bg-destructive/10 border border-destructive rounded"></div>
-                <span className="text-sm">Occupied</span>
+                <span className="text-sm">Ocupado</span>
               </div>
             </div>
           </CardContent>

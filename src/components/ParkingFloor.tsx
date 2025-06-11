@@ -14,7 +14,7 @@ export const ParkingFloor = ({ floor, isDesktop }: ParkingFloorProps) => {
   return (
     <div className="bg-card rounded-lg p-4 border shadow-sm">
       <h3 className="text-lg font-semibold mb-4 text-center">
-        Floor {floor}
+        Piso {floor}
       </h3>
       <div className="grid grid-cols-2 gap-3">
         {spots.map((spot) => (
@@ -59,7 +59,7 @@ const ParkingSpotCard = ({ spot, isDesktop }: ParkingSpotCardProps) => {
           {spot.id}
         </div>
         <div className="text-xs">
-          {spot.isOccupied ? 'OCCUPIED' : 'AVAILABLE'}
+          {spot.isOccupied ? 'OCUPADO' : 'DISPONIBLE'}
         </div>
       </div>
       

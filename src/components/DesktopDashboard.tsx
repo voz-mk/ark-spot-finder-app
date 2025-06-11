@@ -12,9 +12,9 @@ export const DesktopDashboard = () => {
 
   const getStatusMessage = () => {
     const availableCount = availableSpots.length;
-    if (availableCount === 0) return 'FULL';
-    if (availableCount === totalSpots) return 'EMPTY';
-    return 'AVAILABLE';
+    if (availableCount === 0) return 'LLENO';
+    if (availableCount === totalSpots) return 'VACÍO';
+    return 'DISPONIBLE';
   };
 
   const getStatusColor = () => {
@@ -29,15 +29,15 @@ export const DesktopDashboard = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">sPark Dashboard</h1>
-          <p className="text-muted-foreground">Smart Parking Management System</p>
+          <h1 className="text-4xl font-bold mb-2">Panel sPark</h1>
+          <p className="text-muted-foreground">Sistema Inteligente de Gestión de Estacionamiento</p>
         </div>
 
         {/* Status Overview */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium">Total Spots</CardTitle>
+              <CardTitle className="text-sm font-medium">Espacios Totales</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">{totalSpots}</div>
@@ -46,7 +46,7 @@ export const DesktopDashboard = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium">Available</CardTitle>
+              <CardTitle className="text-sm font-medium">Disponibles</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-600">
@@ -57,7 +57,7 @@ export const DesktopDashboard = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium">Occupied</CardTitle>
+              <CardTitle className="text-sm font-medium">Ocupados</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-destructive">
@@ -75,7 +75,7 @@ export const DesktopDashboard = () => {
                 {getStatusMessage()}
               </div>
               <div className="text-lg text-muted-foreground">
-                Parking Lot Status
+                Estado del Estacionamiento
               </div>
             </div>
           </CardContent>

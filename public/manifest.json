@@ -1,8 +1,8 @@
 
 {
-  "name": "sPark - Smart Parking",
+  "name": "sPark - Estacionamiento Inteligente",
   "short_name": "sPark",
-  "description": "Smart parking management and reservation system",
+  "description": "Sistema inteligente de gestión y reservas de estacionamiento",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
