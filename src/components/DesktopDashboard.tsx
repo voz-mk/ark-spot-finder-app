@@ -2,6 +2,8 @@
 import { useParkingStore } from '@/lib/parkingStore';
 import { ParkingFloor } from './ParkingFloor';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Logo } from '@/components/Logo';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { cn } from '@/lib/utils';
 
 export const DesktopDashboard = () => {
@@ -27,10 +29,16 @@ export const DesktopDashboard = () => {
   return (
     <div className="min-h-screen bg-background p-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">Panel sPark</h1>
-          <p className="text-muted-foreground">Sistema Inteligente de Gestión de Estacionamiento</p>
+        {/* Header with Logo and Theme Toggle */}
+        <div className="flex justify-between items-center mb-8">
+          <div className="flex items-center gap-4">
+            <Logo size="lg" />
+            <div>
+              <h1 className="text-4xl font-bold">Panel sPark</h1>
+              <p className="text-muted-foreground">Sistema Inteligente de Gestión de Estacionamiento</p>
+            </div>
+          </div>
+          <ThemeToggle />
         </div>
 
         {/* Status Overview */}

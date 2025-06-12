@@ -49,7 +49,7 @@ const ParkingSpotCard = ({ spot, isDesktop }: ParkingSpotCardProps) => {
         "relative aspect-[3/2] rounded-lg border-2 transition-all duration-300 flex items-center justify-center",
         spot.isOccupied
           ? "bg-destructive/10 border-destructive text-destructive"
-          : "bg-green-50 border-green-500 text-green-700 hover:bg-green-100",
+          : "bg-green-50 dark:bg-green-950 border-green-500 text-green-700 dark:text-green-400 hover:bg-green-100 dark:hover:bg-green-900",
         !isDesktop && !spot.isOccupied && "cursor-pointer hover:scale-105"
       )}
       onClick={handleReserve}

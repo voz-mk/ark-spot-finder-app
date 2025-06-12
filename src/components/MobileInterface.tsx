@@ -4,6 +4,8 @@ import { useParkingStore } from '@/lib/parkingStore';
 import { ParkingFloor } from './ParkingFloor';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Logo } from '@/components/Logo';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { useToast } from '@/hooks/use-toast';
 
 export const MobileInterface = () => {
@@ -38,9 +40,13 @@ export const MobileInterface = () => {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="max-w-md mx-auto">
-        {/* Header */}
+        {/* Header with Logo and Theme Toggle */}
+        <div className="flex justify-between items-center mb-6">
+          <Logo size="md" />
+          <ThemeToggle />
+        </div>
+        
         <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold mb-2">sPark</h1>
           <p className="text-muted-foreground">Reservas Inteligentes de Estacionamiento</p>
         </div>
 
@@ -66,16 +72,16 @@ export const MobileInterface = () => {
 
         {/* Reservation Status */}
         {reservedSpot && (
-          <Card className="mb-6 border-green-500 bg-green-50">
+          <Card className="mb-6 border-green-500 bg-green-50 dark:bg-green-950">
             <CardHeader>
-              <CardTitle className="text-green-700">¡Espacio Reservado!</CardTitle>
+              <CardTitle className="text-green-700 dark:text-green-400">¡Espacio Reservado!</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-700 mb-2">
+                <div className="text-3xl font-bold text-green-700 dark:text-green-400 mb-2">
                   #{reservedSpot}
                 </div>
-                <div className="text-green-600">
+                <div className="text-green-600 dark:text-green-300">
                   {getSpotLocation(reservedSpot)}
                 </div>
               </div>
@@ -116,7 +122,7 @@ export const MobileInterface = () => {
           <CardContent>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
-                <div className="w-4 h-4 bg-green-100 border border-green-500 rounded"></div>
+                <div className="w-4 h-4 bg-green-100 border border-green-500 rounded dark:bg-green-900"></div>
                 <span className="text-sm">Disponible</span>
               </div>
               <div className="flex items-center space-x-3">
