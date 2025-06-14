@@ -32,7 +32,7 @@ export const DesktopDashboard = () => {
         {/* Header with Logo and Theme Toggle */}
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-4">
-            <Logo size="lg" />
+            <Logo size="lg" showText={false} />
             <div>
               <h1 className="text-4xl font-bold">Panel sPark</h1>
               <p className="text-muted-foreground">Sistema Inteligente de Gestión de Estacionamiento</p>
