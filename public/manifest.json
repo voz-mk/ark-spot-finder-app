@@ -10,22 +10,56 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMwMDY2Y2MiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CjxwYXRoIGQ9Ik0xNCAySDlMMTcgMTAuNVYxN2E0IDQgMCAwIDEtNCA0SDdhNCA0IDAgMCAxLTQtNFY2YTQgNCAwIDAgMSA0LTRoNFoiLz4KPGJ5IHI9IjIiIGN4PSI3IiBjeT0iMTciLz4KPGJ5IHI9IjIiIGN4PSIxNyIgY3k9IjE3Ii8+CjxwYXRoIGQ9Ik0xNCAydjguNUgxNy41Ii8+Cjwvc3ZnPgo8L3N2Zz4K",
+      "src": "/icon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMwMDY2Y2MiLz4KPHN2ZyB4PSIxMjgiIHk9IjEyOCIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CjxwYXRoIGQ9Ik0xNCAySDlMMTcgMTAuNVYxN2E0IDQgMCAwIDEtNCA0SDdhNCA0IDAgMCAxLTQtNFY2YTQgNCAwIDAgMSA0LTRoNFoiLz4KPGJ5IHI9IjIiIGN4PSI3IiBjeT0iMTciLz4KPGJ5IHI9IjIiIGN4PSIxNyIgY3k9IjE3Ii8+CjxwYXRoIGQ9Ik0xNCAydjguNUgxNy41Ii8+Cjwvc3ZnPgo8L3N2Zz4K",
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
-    },
-    {
-      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMwMDY2Y2MiLz4KPHN2ZyB4PSI0OCIgeT0iNDgiIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CjxwYXRoIGQ9Ik0xNCAySDlMMTcgMTAuNVYxN2E0IDQgMCAwIDEtNCA0SDdhNCA0IDAgMCAxLTQtNFY2YTQgNCAwIDAgMSA0LTRoNFoiLz4KPGJ5IHI9IjIiIGN4PSI3IiBjeT0iMTciLz4KPGJ5IHI9IjIiIGN4PSIxNyIgY3k9IjE3Ii8+CjxwYXRoIGQ9Ik0xNCAydjguNUgxNy41Ii8+Cjwvc3ZnPgo8L3N2Zz4K",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "monochrome"
     }
   ],
   "categories": ["transportation", "utilities"],
@@ -39,7 +73,7 @@
       "url": "/?action=reserve",
       "icons": [
         {
-          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiMwMDY2Y2MiLz4KPHN2ZyB4PSIyNCIgeT0iMjQiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CjxwYXRoIGQ9Ik0xNCAySDlMMTcgMTAuNVYxN2E0IDQgMCAwIDEtNCA0SDdhNCA0IDAgMCAxLTQtNFY2YTQgNCAwIDAgMSA0LTRoNFoiLz4KPGJ5IHI9IjIiIGN4PSI3IiBjeT0iMTciLz4KPGJ5IHI9IjIiIGN4PSIxNyIgY3k9IjE3Ii8+CjxwYXRoIGQ9Ik0xNCAydjguNUgxNy41Ii8+Cjwvc3ZnPgo8L3N2Zz4K",
+          "src": "/icon-96x96.png",
           "sizes": "96x96"
         }
       ]
@@ -47,16 +81,16 @@
   ],
   "screenshots": [
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI3MjAiIHZpZXdCb3g9IjAgMCAxMjgwIDcyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iNzIwIiBmaWxsPSIjZjhmYWZjIi8+Cjx0ZXh0IHg9IjY0MCIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IiM2MzY0NmYiPnNQYXJrIC0gTW9kbyBEZXNrdG9wPC90ZXh0Pgo8L3N2Zz4K",
-      "sizes": "1280x720",
-      "type": "image/svg+xml",
+      "src": "/splash-1536x2048.png",
+      "sizes": "1536x2048",
+      "type": "image/png",
       "form_factor": "wide",
       "label": "Vista del panel de control en desktop"
     },
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzUwIiBoZWlnaHQ9IjEzMzQiIHZpZXdCb3g9IjAgMCA3NTAgMTMzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijc1MCIgaGVpZ2h0PSIxMzM0IiBmaWxsPSIjZjhmYWZjIi8+Cjx0ZXh0IHg9IjM3NSIgeT0iNjY3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzYiIGZpbGw9IiM2MzY0NmYiPnNQYXJrIC0gTW9kbyBNb3ZpbDwvdGV4dD4KPC9zdmc+Cg==",
+      "src": "/splash-750x1334.png",
       "sizes": "750x1334",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "form_factor": "narrow",
       "label": "Vista de reservas en móvil"
     }

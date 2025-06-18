@@ -1,0 +1,11 @@
+
+<svg width="640" height="1136" viewBox="0 0 640 1136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="1136" fill="#0066cc"/>
+<svg x="120" y="368" width="400" height="400" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 2H9L17 10.5V17a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h4Z"/>
+<circle r="2" cx="7" cy="17"/>
+<circle r="2" cx="17" cy="17"/>
+<path d="M14 2v8.5H17.5"/>
+</svg>
+<text x="320" y="852" text-anchor="middle" font-family="Arial" font-size="70" font-weight="bold" fill="white">sPark</text>
+</svg>
