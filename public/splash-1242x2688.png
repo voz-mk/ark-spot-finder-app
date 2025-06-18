@@ -1,11 +1,13 @@
 
 <svg width="1242" height="2688" viewBox="0 0 1242 2688" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="1242" height="2688" fill="#0066cc"/>
-<svg x="421" y="1194" width="400" height="400" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-<path d="M14 2H9L17 10.5V17a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h4Z"/>
-<circle r="2" cx="7" cy="17"/>
-<circle r="2" cx="17" cy="17"/>
-<path d="M14 2v8.5H17.5"/>
+<g transform="translate(521, 1194)">
+<svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 18V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12"/>
+<path d="M2 6h20"/>
+<circle cx="7" cy="9" r="1"/>
+<circle cx="17" cy="9" r="1"/>
 </svg>
-<text x="621" y="1678" text-anchor="middle" font-family="Arial" font-size="100" font-weight="bold" fill="white">sPark</text>
+</g>
+<text x="621" y="1478" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="68" font-weight="bold" fill="white">sPark</text>
 </svg>
