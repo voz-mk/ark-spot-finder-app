@@ -97,41 +97,6 @@ export const MobileInterface = () => {
         >
           {availableSpots.length === 0 ? 'Sin Espacios Disponibles' : 'Reservar Espacio Aleatorio'}
         </Button>
-
-        {/* Manual Selection */}
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle>Elige tu Espacio</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground mb-4">
-              Toca cualquier espacio disponible (verde) para reservarlo
-            </p>
-            <div className="space-y-4">
-              <ParkingFloor floor={1} isDesktop={false} />
-              <ParkingFloor floor={2} isDesktop={false} />
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Legend */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Leyenda</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-3">
-                <div className="w-4 h-4 bg-green-100 border border-green-500 rounded dark:bg-green-900"></div>
-                <span className="text-sm">Disponible</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-4 h-4 bg-destructive/10 border border-destructive rounded"></div>
-                <span className="text-sm">Ocupado</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

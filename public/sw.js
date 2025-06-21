@@ -2,10 +2,7 @@
 const CACHE_NAME = 'spark-v2';
 const urlsToCache = [
   '/',
-  '/static/js/bundle.js',
-  '/static/css/main.css',
-  '/manifest.json',
-  '/offline.html'
+  ...self.__WB_MANIFEST.map(entry => entry.url)
 ];
 
 // Install event
