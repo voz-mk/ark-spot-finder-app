@@ -27,7 +27,7 @@ export const DesktopDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background p-6">
+    <div className="min-h-screen p-6">
       <div className="max-w-6xl mx-auto">
         {/* Header with Logo and Theme Toggle */}
         <div className="flex justify-between items-center mb-8">

@@ -38,7 +38,7 @@ export const MobileInterface = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background p-4">
+    <div className="min-h-screen p-4">
       <div className="max-w-md mx-auto">
         {/* Header with Logo and Theme Toggle */}
         <div className="flex justify-between items-center mb-6">

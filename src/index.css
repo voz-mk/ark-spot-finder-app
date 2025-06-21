@@ -95,9 +95,19 @@
 @layer base {
   * {
     @apply border-border;
+    touch-action: pan-x pan-y;
   }
 
-  body {
+  *:not(input):not(select):not(code):not(textarea):not([contenteditable]) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+  html, body {
     @apply bg-background text-foreground;
   }
 }

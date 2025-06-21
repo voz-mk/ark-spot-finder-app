@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -8,92 +7,49 @@
     <meta name="description" content="Sistema inteligente de gestión y reservas de estacionamiento" />
     <meta name="author" content="Equipo sPark" />
     <meta name="keywords" content="estacionamiento, parking, reservas, smart parking, sPark" />
+    <link rel="icon" type="image/png" href="/favicon.ico">
 
     <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#0066cc" />
+    <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="sPark" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="sPark" />
-    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-startup-image" href="/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+
+    <link rel="apple-touch-startup-image" href="/splash-2048x2732-dark.png" media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1668x2224-dark.png" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1536x2048-dark.png" media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1242x2208-dark.png" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-1125x2436-dark.png" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-828x1792-dark.png" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/splash-750x1334-dark.png" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     
     <!-- Icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180x180.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/icon-96x96.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/icon-96x96.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/icon-48x48.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/icon-48x48.png" />
-
-    <!-- iOS Splash Screens -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    
-    <!-- iPhone 14 Pro Max, iPhone 13 Pro Max, iPhone 12 Pro Max -->
-    <link rel="apple-touch-startup-image" href="/splash-1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
-    
-    <!-- iPhone 14 Pro, iPhone 13 Pro, iPhone 12 Pro -->
-    <link rel="apple-touch-startup-image" href="/splash-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
-    
-    <!-- iPhone 14, iPhone 13, iPhone 12 -->
-    <link rel="apple-touch-startup-image" href="/splash-828x1792.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
-    
-    <!-- iPhone 11 Pro Max, iPhone XS Max -->
-    <link rel="apple-touch-startup-image" href="/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
-    
-    <!-- iPhone 11, iPhone XR -->
-    <link rel="apple-touch-startup-image" href="/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-    
-    <!-- iPhone 11 Pro, iPhone XS, iPhone X -->
-    <link rel="apple-touch-startup-image" href="/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
-    
-    <!-- iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
-    <link rel="apple-touch-startup-image" href="/splash-1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
-    
-    <!-- iPhone 8, iPhone 7, iPhone 6s, iPhone 6 -->
-    <link rel="apple-touch-startup-image" href="/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-    
-    <!-- iPhone SE (1st & 2nd generation), iPhone 5s, iPhone 5c, iPhone 5 -->
-    <link rel="apple-touch-startup-image" href="/splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-    
-    <!-- iPad Pro 12.9" (5th & 4th generation) -->
-    <link rel="apple-touch-startup-image" href="/splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-    
-    <!-- iPad Pro 11" (3rd & 2nd generation) -->
-    <link rel="apple-touch-startup-image" href="/splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-    
-    <!-- iPad Pro 10.5", iPad Air (3rd generation) -->
-    <link rel="apple-touch-startup-image" href="/splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-    
-    <!-- iPad, iPad 2, iPad Mini -->
-    <link rel="apple-touch-startup-image" href="/splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
-
-    <!-- Android specific -->
-    <meta name="msapplication-TileColor" content="#0066cc" />
-    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="icon" href="/icon-192x192.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/icon-ios-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/icon-ios-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/icon-ios-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/icon-ios-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/icon-ios-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icon-ios-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon-ios-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon-ios-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-ios-180x180.png" />
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="/manifest.json" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="/manifest.webmanifest" crossorigin="use-credentials" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="sPark - Estacionamiento Inteligente" />
     <meta property="og:description" content="Sistema inteligente de gestión y reservas de estacionamiento" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <meta property="og:url" content="https://14c52dfb-3043-4848-9ef2-7117b6faef28.lovableproject.com" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <!-- Disable zoom on mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   </head>
 
   <body>
