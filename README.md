@@ -1,5 +1,7 @@
 # Welcome to your Lovable project
 
+## trigger empty commit
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/14c52dfb-3043-4848-9ef2-7117b6faef28
