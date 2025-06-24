@@ -106,7 +106,7 @@ export const MobileInterface = () => {
         </Card>
 
         {/* Reservation Status */}
-        {reservedSpot && (
+        {reservedSpot && reservedSpot.status === ParkingSpotStatus.RESERVED && (
           <Card className="mb-6 border-green-500 bg-green-50 dark:bg-green-950">
             <CardHeader>
               <CardTitle className="text-center text-green-700 dark:text-green-400">¡Espacio Reservado!</CardTitle>
@@ -127,7 +127,7 @@ export const MobileInterface = () => {
         {/* Quick Reserve Button */}
         <Button 
           onClick={handleQuickReserve}
-          disabled={availableSpots.length === 0 || !!reservedSpot}
+          disabled={availableSpots.length === 0 || (reservedSpot && reservedSpot.status === ParkingSpotStatus.RESERVED)}
           className="flex-1 flex flex-col w-full mb-6 h-12 text-xl"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="inline-block !w-24 !h-24" viewBox="0 0 32 32"><path fill="currentColor" d="M23 3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v19a1 1 0 1 1-2 0V11h-1a2 2 0 0 1-2-2zm-1.5 0H10.407a4 4 0 0 0-3.905 3.132L5.864 9H5a1 1 0 0 0 0 2h.42l-.33 1.485A4 4 0 0 0 3 16v10a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3v-1h12v1a3 3 0 0 0 2.5 2.959v-2.093A1 1 0 0 1 24 26v-1h.5V12.465A3.5 3.5 0 0 1 23.196 12H7.246l1.208-5.434A2 2 0 0 1 10.406 5H21.5zM5 26v-1h3v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1m8.5-5a1 1 0 1 1 0-2h5a1 1 0 1 1 0 2zM11 17.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M22.5 16a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"></path></svg>
