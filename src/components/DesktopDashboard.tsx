@@ -5,9 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Logo } from '@/components/Logo';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { cn } from '@/lib/utils';
+import { useEffect } from 'react';
 
 export const DesktopDashboard = () => {
-  const { spots, getAvailableSpots, getOccupiedSpots } = useParkingStore();
+  const { wsUrl, spots, getAvailableSpots, getOccupiedSpots, syncSpots } = useParkingStore();
   const availableSpots = getAvailableSpots();
   const occupiedSpots = getOccupiedSpots();
   const totalSpots = spots.length;
@@ -25,6 +26,25 @@ export const DesktopDashboard = () => {
     if (availableCount === totalSpots) return 'text-blue-600';
     return 'text-green-600';
   };
+
+  useEffect(() => {
+    const socket = new WebSocket(wsUrl, 'web');
+    socket.onopen = () => {
+      console.log('✅ Conectado al servidor WebSocket');
+    };
+    socket.onmessage = (event) => {
+      console.log('📥 Mensaje del servidor: ', event.data);
+      syncSpots(JSON.parse(event.data));
+    };
+    socket.onclose = () => {
+      console.log('❌ Conexión cerrada');
+    };
+    socket.onerror = (error) => {
+      console.log('⚠️ Error: ', error);
+    };
+
+    return () => socket.close();
+  }, [wsUrl]);
 
   return (
     <div className="min-h-screen p-6">
